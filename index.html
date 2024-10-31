@@ -2,16 +2,180 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Portofolio Saya</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  
+<!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand fs-4 fw-bold" href="#">Bayu Harmono Putra</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">Tentang Saya</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#work">Pengalaman Kerja</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Kontak</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<!-- Home -->
+      <section id="home" class="home container">
+        <div class="row d-flex align-items-center flex-md-row flex-column-reverse">
+            <div class="col-12 col-md-8">
+                <h3 class="fw-semibold">Hallo, Nama Saya</h3>
+                <h1 class="fw-bold">Bayu Harmono Putra</h1>
+                <p>Ini Adalah Portofolio dan Data Diri Tentang Saya
+                <br>Klik Tombol Dibawah Ini Untuk Mengunduh Biodata / Curriculum Vitae</br>
+                <a class="btn button mt-2" href="Portfolio/images/cv.jpg" download>Unduh CV</a>
+            </div>
+            <div class="col-12 col-md-4 d-flex justify-content-md-end justify-content-center">
+                <img src="Portfolio/images/Foto.jpg" alt="Portrait">
+            </div>
+        </div>
+        <a class="text-decoration-none arrow w-100 d-flex align-items-center flex-column" href="#about">
+             <div class="text-dark" >More Info</div>
+            <img id="arrow" class="mt-2" src="Portfolio/images/arrow.svg" alt="">
+        </a>
+      </section>
+
+<!-- About -->
+      <section id="about" class="about container">
+        <p><h3><u>Ini Adalah Riwayat Pendidikan Saya</u></h3></p>
+        <div class="about-exp">
+
+            <div class="about-exp-item">
+              <div class="about-exp-item-header">
+                <div>
+                  <h5>SDN 1 Bago</h5>
+                </div>
+                <button class="btn button" onclick="toogleDetail(event)">Tampilkan Info</button>
+              </div>
+              <p class="about-exp-item-detail">Tahun 2007 - 2012</p>
+            </div>
+
+            <div class="about-exp-item">
+              <div class="about-exp-item-header">
+                <div>
+                  <h5>SMPN 6 Tulungagung</h5>
+                </div>
+                <button class="btn button" onclick="toogleDetail(event)">Tampilkan Info</button>
+              </div>
+              <p class="about-exp-item-detail">Tahun 2012 - 2016</p>
+            </div>
+
+            <div class="about-exp-item">
+              <div class="about-exp-item-header">
+                <div>
+                  <h5>SMK Sore Tulungagung Jurusan "Teknik Komputer dan Jaringan"</h5>
+                </div>
+                <button class="btn button" onclick="toogleDetail(event)">Tampilkan Info</button>
+              </div>
+              <p class="about-exp-item-detail">Tahun 2016 - 2019</p>
+
+            <div class="about-exp-item">
+              <div class="about-exp-item-header">
+                <div>
+                  <h5>Kursus</h5>
+                  <p>Elektronika Dasar</p>
+                  <p>Internet Of Things</p>
+                  <p>Pemrograman Komputer</p>
+                  <p>Desain Grafis</p>
+                  <p>Digital Marketing</p>
+                </div>
+              </div>
+            </div>
+
+        </div>
+      </section>
+
+<!-- Work -->
+      <section id="work" class="work container">
+        <div class="row d-flex align-items-center gap-5">
+          <div class="col-12 col-md-5">
+              <p>
+                Pengalaman yang saya miliki mencakup bidang Teknisi Dan Komputer. Saat SMK, saya mendapat kesempatan magang dalam bidang servis komputer di toko komputer lokal, dimana saya bertugas untuk melakukan perbaikan dan perawatan pada laptop / komputer.
+
+Kemudian, saya juga bekerja sebagai Teknisi Printer dengan pengalaman lebih dari 5 Tahun. Berbagai posisi tersebut melatih saya untuk melakukan Servis Printer, Servis PC , dan Pemasangan / Instalasi CCTV. Sebagai orang IT, saya ingin terus meningkatkan keahlian saya dalam bidang ilmu komputer lainnya, seperti Pemrograman Web dan Desain Grafis.
+. Untuk itu saya mengikuti berbagai kursus dan pelatihan tentang elektronika dasar, pemrograman komputer , dan design grafis.
+              </p>
+          </div>
+          <div class="col-12 col-md-6 work-img">
+            <div id="work-1" class="work-img-item">
+              <img src="Portfolio/images/1.jfif" alt="work-1" >
+            </div>
+            <div id="work-2" class="work-img-item">
+              <img src="Portfolio/images/2.jfif" alt="work-2" >
+            </div>
+            <div id="work-3" class="work-img-item">
+              <img src="Portfolio/images/3.jfif" alt="work-3" >
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!-- Contact      -->
+      <section id="contact" class="contact container">
+        <div class="row d-flex align-items-center gap-5">
+          <div class="col-12 col-lg-6">
+          </div>
+          <div class="row">
+            <div class="col d-flex align-items-center">
+              <img src="Portfolio/images/Facebook.svg" alt="">
+              <p><h3>Facebook : BayuHarmono</h3></p>
+            </div>
+            <div class="col d-flex align-items-center">
+              <img src="Portfolio/images/Instagram.svg" alt="">
+              <p><h3>Instagram : @bayuharmono</h3></p>
+            </div>
+            <div class="col d-flex align-items-center">
+              <img src="Portfolio/images/Twitter.svg" alt="">
+              <p><h3>WA : 0895-6222-42525</h3></p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <form class="contact-form" onsubmit="onFormSubmit(event)">
+              <div class="mb-3">
+                <label for="inp_email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="masukkan email anda">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="inp_subjek" class="form-label">Subjek</label>
+                <input type="text" class="form-control" id="inp_subjek" placeholder="masukkan subjek">
+              </div>
+              <div class="mb-3">
+                <label for="inp_message" class="form-label">Message</label>
+                <input type="text" class="form-control" id="inp_message" placeholder="masukkan pesan">
+              </div>
+              <div class="d-flex justify-content-center">
+                <button type="submit" class="btn button">Kirim Pesan</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+
+ <!-- Script      -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="main.js"></script>
 </body>
 </html>
